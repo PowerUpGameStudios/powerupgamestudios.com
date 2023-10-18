@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Power-Up Game Studios</title>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
-        <meta name="theme-color" content="#ffffff">
-        <title>Power-Up Game Studios</title>
+        <meta name="theme-color" content="#182840">
         <link href="styles/powerup.css" rel="stylesheet" />
+        <script>window.onload = function () {
+                var year = new Date().getFullYear();
+                var copyrightFooter = document.getElementById("copyright-info");
+                copyrightFooter.textContent = "Copyright © " + year + " Power-Up Game Studios LLC - All rights reserved";
+            }</script>
     </head>
-    <body>
-        <div>
-            <img src="images/powerup.604.png" />
-            <h1>Coming soon</h1>
+    <body bgcolor="#182840" marginheight="0" marginwidth="0" leftmargin="0" topmargin="0">
+        <div id="logo">
+            <img src="images/powerup.604.png" border="0" alt="Power-Up Game Studios" />
         </div>
-        <div class="bottomlinks">
-            <a href="mailto:admin@powerupgamestudios.com">Support</a>
-            <a href="privacy.html">Privacy</a>
+        <div id="bottom">
+            <div id="footer_text" class="footer"><a id="copyright-info"></a> - <a href="mailto:admin@powerupgamestudios.com">Support</a> - <a href="privacy.html">Privacy</a></div>
         </div>
     </body>
 </html>
