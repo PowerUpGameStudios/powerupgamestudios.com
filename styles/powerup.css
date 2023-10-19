@@ -6,6 +6,30 @@
     text-align: center;
 }
 
+#game_card {
+    font-size: 0;
+    text-align: center;
+}
+
+.game_card_bottom_links {
+    margin: 0 auto;
+    width: 544px;
+    position: relative;
+    text-align: center;
+}
+
+.game_card_bottom {
+    position: absolute;
+    z-index: 1;
+}
+
+.play_badge {
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    right: 20px;
+}
+
 #bottom {
     margin: 16px;
     text-align: center;
