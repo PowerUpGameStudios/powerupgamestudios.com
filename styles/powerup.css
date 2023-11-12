@@ -23,9 +23,16 @@
     z-index: 1;
 }
 
-.play_badge {
+.app_store_badge {
     position: absolute;
     z-index: 2;
+    top: 12px;
+    left: 20px;
+}
+
+.play_badge {
+    position: absolute;
+    z-index: 3;
     top: 12px;
     right: 20px;
 }
