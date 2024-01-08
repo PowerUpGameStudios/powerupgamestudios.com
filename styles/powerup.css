@@ -6,9 +6,23 @@
     text-align: center;
 }
 
-#game_card {
+.game_card_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game_card_container:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.game_card {
     font-size: 0;
     text-align: center;
+}
+
+.game_card:not(:last-child) {
+    margin-right: 40px;
 }
 
 .game_card_bottom_links {
@@ -19,7 +33,7 @@
 }
 
 .game_card_bottom {
-    position: absolute;
+    position: relative;
     z-index: 1;
 }
 
@@ -46,7 +60,6 @@
     margin: 20px auto 0px auto;
     font-size: 12px;
     height: 30px;
-    padding-top: 20px;
     color: white;
     font-weight: bold;
     letter-spacing: 1px;
