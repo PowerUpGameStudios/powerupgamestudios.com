@@ -1,8 +1,19 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 #logo {
-    margin-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
+    margin: 60px auto;
     text-align: center;
 }
 
@@ -19,10 +30,47 @@
 .game_card {
     font-size: 0;
     text-align: center;
+    display: inline-block;
 }
 
 .game_card:not(:last-child) {
     margin-right: 40px;
+}
+
+.game_card_text_with_icon {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    gap: 16px;
+    background-image: url('../images/game_card_bottom_stretch.png');
+    height: auto;
+}
+
+.game_card_icon {
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.game_card_text {
+    text-align: left;
+    display: block;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.game_card_text p {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.game_card_text p strong {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .game_card_bottom_links {
@@ -57,7 +105,7 @@
 }
 
 #footer_text {
-    margin: 20px auto 0px auto;
+    margin: 20px auto 0 auto;
     font-size: 12px;
     height: 30px;
     color: white;
